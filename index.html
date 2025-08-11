@@ -4,10 +4,15 @@
         <title>homepage</title>
         <meta charset="utf-8">
         <meta name="keywords" content="globalwarming,climate-change,earth weather,environment,ecology">
-        <meta name="viewport" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="greenearth.png">
         <style>
+body{
+    margin: 0;
+    padding: 0;
+    
+}
 .header{
     position: relative;
    
@@ -77,14 +82,20 @@
             background-color: #55ACEE;
             border: 3px solid rgb(202, 214, 224);
             border-radius: 15px;
-            width: 200px;
-            height: 310px;
+            width: 270px;
+            height: 400px;
             margin-top: 10px;
             padding: 10px;
+            position: relative;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
         }
         h3{
-            color: aliceblue;
+            color: black;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
         }
         input{
             padding-top: 10px;
@@ -94,32 +105,82 @@
             padding-top: 10px;
             border-radius: 5px;
         }
-        .submit{
-            margin-top: 10px;
-            text-align: center;
-            background-color: black;
-            color: white;
-        }
-        .centercontent{
-        width: 68%;
-        text-align: center;
         
-      }
+        
+        .newsletter label{
+            color: white; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3px;
+            
+        }
+        .newsletter input, select{
+            width: 90%;
+            height: 25px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 16px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .newsletter select{
+            width: 90%;
+            height: 30px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .newsletter input[type="submit"]{
+            width: 90%;
+            height: 35px;
+            font-size: 18px;
+            background-color: #ccd9e4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+       
       blockquote{
         font-family: fantasy;
       }
-     
+      .explanations{
+        text-align: justify;
+        font-size: 18px;
+        color: rgb(71, 63, 63);
+        margin-top: 20px;
+      }    
       cite{
         text-decoration: underline;
       }
+      h4{
+        text-align: center;
+      }
       .content{
-        height: 660px;
+        height: 700px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
         
+      }
+       .centercontent{
+        width: 50%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px;
+        font-size: 18px;
+        color: rgb(71, 63, 63);
       }
      .rightcontent{
         width: 25%;
         display: block;
-        float: right;
+        text-align: right;
      }
      img{
         width: 312px;
@@ -129,9 +190,10 @@
         text-align: center;
       }
      .leftcontent{
-        width: 30%;
+        width: 25%;
         height: 520px;
-        float: left;
+        padding: 20px;
+        margin-left: 0rem;
      }
       .footer{
         background-color: rgb(106, 146, 106);
@@ -178,7 +240,7 @@
 }
         </style>
     </head>
-    <body onload="alert('Welcome');">
+    <body>
     <div class="header">
         <div class="slideshow-container">
             <div class="slide">
@@ -197,35 +259,31 @@
         <h1 id="firstheading">GLOBAL WARMING</h1>
     <div class="navbarone">
         <ul class="firstli">
-           <li class="eux"><a href="new.html">Assignment6</a></li>
+           <!-- <li class="eux"><a href="new.html">Assignment6</a></li>
             <li class="eux"><a href="assignment5_Aicha.html">Assignment5</a></li>
             <li class="eux"><a href="assignment4.html">Assignment4</a></li>
             <li class="eux"><a href="assignment3.html">assignment3</a></li>
-            <li class="eux"><a href="ASSIGMENT2.aicha.HTML">Assignment2</a></li>
+            <li class="eux"><a href="ASSIGMENT2.aicha.HTML">Assignment2</a></li> -->
             <li class="eux"><a class="navbar" href="solutions.html">SOLUTIONS</a></li>
             <li class="eux"><a class="navbar" href="consequences.html">CONSEQUENCES</a></li>
             <li class="eux"><a class="navbar" href="causes.html">CAUSES</a></li>
-            <li class="eux"><a class="navbar" href="HOME.html">HOME</a></li>
+            <li class="eux"><a class="navbar" href="index.html">HOME</a></li>
 
         </ul>
     </div>
     </div>
     <div class="content">
-        <section class="rightcontent">
-         <img src="fire.jfif">
-         <img src="fontedesglaces!.jfif">
-         <img src="tsunami.jfif">
-        </section>
+        
         <section class="leftcontent">
 <div class="newsletter">
     <h3>Subscribe to our Newsletter</h3> 
-    <form action="mailto:ug2321291@ines.ac.rw", method="post">
+    <form action="mailto:ug2321291@ines.ac.rw" method="post">
         <label>Enter your name:</label>
-        <input type="your name" value="" autofocus required>
+        <input type="your name" value="" autofocus placeholder="enter your name" required>
         <label>Enter your Email:</label>
-        <input type="your email" value="" autocomplete="" required>
+        <input type="your email" value="" autocomplete="" placeholder="email@gmail.com" required>
         <label>your phone number:</label>
-        <input type="tel",name="your phone number",value="", placeholder="+2507********", required>
+        <input type="tel"name="your phone number" value="" placeholder="+250XXXXXXXXX" required>
         <label>Country:</label><br>
         <select name="Country" required>
         <option>RWANDA</option>
@@ -236,7 +294,7 @@
         <option>CHAD</option>
         <option>SOUTH-SOUDAN</option>
         <option>else</option></select><br>
-        <input class="submit" type="submit",name="submit",value="", required>
+        <input class="submit" type="submit"name="submit" value="submit" required>
     </form>
 </div>
         </section>
@@ -252,6 +310,7 @@
                 </cite>
               
             </blockquote>
+            <div class="explanations">
             <h4>Earth is warming up, and humans are at least partially to blame.
                  The causes, effects, and complexities of global warming are
                   important
@@ -273,15 +332,19 @@
         temperature. Though this warming trend has been going on for a 
         long time, its pace has significantly increased in the last hundred
          years due to the burning of fossil fuels.</p>
-         <div class="bottom">
-            <p>
-                <h4>What is CLIMATE Change?</h4> 
-                Climate change is a long-term change in the average weather 
-                   patterns that have come to define Earth’s local, regional and 
-                   global climates. These changes have a broad range of observed 
-                   effects that are synonymous with the term.</p>
+        <h4>What is CLIMATE Change?</h4>
+            <p> change is a long-term change in the average weather 
+               patterns that have come to define Earth’s local, regional and 
+               global climates. These changes have a broad range of observed 
+               effects that are synonymous with the term.</p>
          </div>
        
+        </section>
+
+        <section class="rightcontent">
+         <img src="fire.jfif">
+         <img src="fontedesglaces!.jfif">
+         <img src="tsunami.jfif">
         </section>
        
     </div>
