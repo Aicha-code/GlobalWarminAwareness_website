@@ -7,7 +7,7 @@ My first web development project was aimed at raising awareness about global war
 -**CSS**
 -**JavaScript**
 
-Originally developed in 2023, it was first published on another account that I no longer have access to — now re-published here.
+Originally developed in 2023, it was first published on another account that I no longer have access to and now re-published here.
 
 Features:
 -> Informative content on climate change
